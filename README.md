@@ -8,3 +8,5 @@ All of the above algoritmhs are being tested with and without cross validation.
 
 I am using the python library scikit-learn.
 In addition to the main library scikit-learn, to run the programs you will need the libraries: pandas, matplotlib, time.
+
+You will find all the updated code in the master branch!
