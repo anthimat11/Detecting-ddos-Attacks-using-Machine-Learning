@@ -15,4 +15,4 @@ Modification:
 --I balanced it with the oversampling method (balance_dataset.py).	
 --I replaced the empty fields (NaN) of the dataset with 0 using the Imputing method (config_data2.py)
 
-The final dataset is final_dataset.csv
+The final dataset is balanced_dataset.csv
