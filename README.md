@@ -1,26 +1,18 @@
 # Detecting-ddos-Attacks-using-Machine-Learning
 
-These programs are part of my Thesis: Detecting Distributed Denial of Service Attacks using Machine Learning Algorithms.
+This project is part of my Thesis: Detecting Distributed Denial of Service Attacks using Machine Learning Algorithms.
 
-The algorithms I have tested so far are: Random Forest, Decision Trees, K-Nearest Neighbour (K=3 and K=5), Logistic Regression.
-I am still experimenting with other ones like Hist Gradient Boosting.
-All of the above algoritmhs are being tested with and without cross validation.
+The algorithms I have tested so far are: Random Forest, Decision Tres, Light Gradient Boosting, Neural Netwroks, TabNet.
 
-I am using the python library scikit-learn.
-In addition to the main library scikit-learn, to run the programs you will need the libraries: pandas, matplotlib, time.
+All of the above algoritmhs are tested 2 times, with and without feature scaling in order to compare. Also all tests are done with 5 fold cross validation.
 
-You will find all the updated code in the master branch!
+I am using the python library scikit-learn and PyTorch.
+In addition to the main library scikit-learn, to run the programs you will need the libraries: pandas, matplotlib, numpy.
 
-About the dataset I am using:
-
-I found the dataset at https://www.kaggle.com/datasets/aikenkazin/ddos-sdn-dataset
+The dataset being used is: https://www.kaggle.com/datasets/abdussalamahmed/lr-hr-ddos-2024-dataset-for-sdn-based-networks
 
 Modification:
---I balanced it with the oversampling method (balance_dataset.py). 
---I replaced the non-numeric fields in the dataset with numeric fields (config_data1.py)		
-  The values of the src field containing the IP addresses of the transmitter in the format 10.0.0.X became X.
-  Similarly in the dst field which has the addresses of the receiver.
-  The Protocol field contains the protocol used in each case. This will be UDP or TCP or ICMP which became 1,2,3 respectively
+--I balanced it with the oversampling method (balance_dataset.py).	
 --I replaced the empty fields (NaN) of the dataset with 0 using the Imputing method (config_data2.py)
 
 The final dataset is final_dataset.csv
